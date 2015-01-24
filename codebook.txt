@@ -1,0 +1,164 @@
+
+1. Study Design
+
+	Experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+	Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+	wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the 
+	Human Activity Recognition team captured 3-axial linear acceleration and 3-axial angular velocity at a constant 
+	rate of 50Hz. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was 
+	selected for generating the training data and 30% the test data.
+	
+	A full description is available at the site where the data was obtained:
+
+		http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+
+	The R script run_analysis.R performs the following: 
+
+		1. Merges the training and the test sets to create one data set.
+		2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+		3. Uses descriptive activity names to name the activities in the data set
+		4. Appropriately labels the data set with descriptive variable names. 
+
+		From the data set in step 4, an independent tidy data set with the average of each variable for each activity 
+		and each subject is created.
+
+		See the ReadMe.txt for more information on run_analysis.R (runbook)
+
+			
+	Signals used to estimate features (variables):
+	
+		tBodyAcc-XYZ
+		tGravityAcc-XYZ
+		tBodyAccJerk-XYZ
+		tBodyGyro-XYZ
+		tBodyGyroJerk-XYZ
+		tBodyAccMag
+		tGravityAccMag
+		tBodyAccJerkMag
+		tBodyGyroMag
+		tBodyGyroJerkMag
+		fBodyAcc-XYZ
+		fBodyAccJerk-XYZ
+		fBodyGyro-XYZ
+		fBodyAccMag
+		fBodyAccJerkMag
+		fBodyGyroMag
+		fBodyGyroJerkMag
+
+	Functions used to estimate features (variables):
+
+		mean(): Mean value
+		std(): Standard deviation
+	
+	
+2. Code Book
+
+	Feature-Variables Selected for the Data Set:
+
+		Units: num
+
+		tBodyAcc-mean()-X		Body Accel Time Mean X
+		tBodyAcc-mean()-Y		Body Accel Time Mean Y
+		tBodyAcc-mean()-Z		Body Accel Time Mean Z
+		tBodyAcc-std()-X		Body Accel Time Standard Dev X
+		tBodyAcc-std()-Y		Body Accel Time Standard Dev Y
+		tBodyAcc-std()-Z		Body Accel Time Standard Dev Z
+		tGravityAcc-mean()-X	Gravity Accel Time Mean X
+		tGravityAcc-mean()-Y	Gravity Accel Time Mean Y
+		tGravityAcc-mean()-Z	Gravity Accel Time Mean Z
+		tGravityAcc-std()-X		Gravity Accel Time Standard Dev X
+		tGravityAcc-std()-Y		Gravity Accel Time Standard Dev Y
+		tGravityAcc-std()-Z		Gravity Accel Time Standard Dev Z
+		tBodyAccJerk-mean()-X	Body Accel Jerk Time Mean X
+		tBodyAccJerk-mean()-Y	Body Accel Jerk Time Mean Y
+		tBodyAccJerk-mean()-Z	Body Accel Jerk Time Mean Z
+		tBodyAccJerk-std()-X	Body Accel Jerk Time Standard Dev X
+		tBodyAccJerk-std()-Y	Body Accel Jerk Time Standard Dev Y
+		tBodyAccJerk-std()-Z	Body Accel Jerk Time Standard Dev Z
+		tBodyGyro-mean()-X		Body Gyro Time Mean X
+		tBodyGyro-mean()-Y		Body Gyro Time Mean Y
+		tBodyGyro-mean()-Z		Body Gyro Time Mean Z
+		tBodyGyro-std()-X		Body Gyro Time Standard Dev X
+		tBodyGyro-std()-Y		Body Gyro Time Standard Dev Y
+		tBodyGyro-std()-Z		Body Gyro Time Standard Dev Z
+		tBodyGyroJerk-mean()-X	Body Gyro Jerk Time Mean X
+		tBodyGyroJerk-mean()-Y	Body Gyro Jerk Time Mean Y
+		tBodyGyroJerk-mean()-Z	Body Gyro Jerk Time Mean Z
+		tBodyGyroJerk-std()-X	Body Gyro Jerk Time Standard Dev X
+		tBodyGyroJerk-std()-Y	Body Gyro Jerk Time Standard Dev Y
+		tBodyGyroJerk-std()-Z	Body Gyro Jerk Time Standard Dev Z
+		tBodyAccMag-mean()		Body Accel Magnitude Time Mean
+		tBodyAccMag-std()		Body Accel Magnitude Time Standard Dev
+		tGravityAccMag-mean()	Gravity Accel Magnitude Time Mean
+		tGravityAccMag-std()	Gravity Accel Magnitude Time Standard Dev
+		tBodyAccJerkMag-mean()	Gravity Accel Jerk Magnitude Time Mean
+		tBodyAccJerkMag-std()	Gravity Accel Jerk Magnitude Time Standard Dev
+		tBodyGyroMag-mean()		Body Gyro Magnitude Time Mean
+		tBodyGyroMag-std()		Body Gyro Magnitude Time Standard Dev
+		tBodyGyroJerkMag-mean()	Body Gyro Jerk Magnitude Time Mean
+		tBodyGyroJerkMag-std()	Body Gyro Jerk Magnitude Time Standard Dev
+		fBodyAcc-mean()-X		Body Accel Freq Mean X
+		fBodyAcc-mean()-Y		Body Accel Freq Mean Y
+		fBodyAcc-mean()-Z		Body Accel Freq Mean Z
+		fBodyAcc-std()-X		Body Accel Freq Standard Dev X
+		fBodyAcc-std()-Y		Body Accel Freq Standard Dev Y
+		fBodyAcc-std()-Z		Body Accel Freq Standard Dev Z
+		fBodyAccJerk-mean()-X	Body Accel Jerk Freq Mean X
+		fBodyAccJerk-mean()-Y	Body Accel Jerk Freq Mean Y
+		fBodyAccJerk-mean()-Z	Body Accel Jerk Freq Mean Z
+		fBodyAccJerk-std()-X	Body Accel Jerk Freq Standard Dev X
+		fBodyAccJerk-std()-Y	Body Accel Jerk Freq Standard Dev Y
+		fBodyAccJerk-std()-Z	Body Accel Jerk Freq Standard Dev Z
+		fBodyGyro-mean()-X		Body Gyro Freq Mean X
+		fBodyGyro-mean()-Y		Body Gyro Freq Mean Y
+		fBodyGyro-mean()-Z		Body Gyro Freq Mean Z
+		fBodyGyro-std()-X		Body Gyro Freq Standard Dev X
+		fBodyGyro-std()-Y		Body Gyro Freq Standard Dev Y
+		fBodyGyro-std()-Z		Body Gyro Freq Standard Dev Z
+		fBodyAccMag-mean()		Body Accel Magnitude Freq Mean
+		fBodyAccMag-std()		Body Accel Magnitude Freq Standard Dev
+		fBodyBodyAccJerkMag-mean()	Body Body Accel Jerk Magnitude Freq Mean
+		fBodyBodyAccJerkMag-std()	Body Body Accel Jerk Magnitude Freq Standard Dev
+		fBodyBodyGyroMag-mean()		Body Body Gyro Magnitude Freq Mean
+		fBodyBodyGyroMag-std()		Body Body Gyro Magnitude Freq Standard Dev
+		fBodyBodyGyroJerkMag-mean()	Body Body Gyro Jerk Magnitude Freq Mean
+		fBodyBodyGyroJerkMag-std()	Body Body Gyro Jerk Magnitude Freq Standard Dev
+
+
+		Subject
+
+			Units: int
+			Description: Ids (1 - 30) for 30 volunteers.
+			
+		
+		Activity
+
+			Units: factor (6 levels)
+			
+			1 WALKING
+			2 WALKING_UPSTAIRS
+			3 WALKING_DOWNSTAIRS
+			4 SITTING
+			5 STANDING
+			6 LAYING
+
+		
+	Functions not selected for the data set:
+	
+		mad(): Median absolute deviation 
+		max(): Largest value in array
+		min(): Smallest value in array
+		sma(): Signal magnitude area
+		energy(): Energy measure. Sum of the squares divided by the number of values. 
+		iqr(): Interquartile range 
+		entropy(): Signal entropy
+		arCoeff(): Autorregresion coefficients with Burg order equal to 4
+		correlation(): correlation coefficient between two signals
+		maxInds(): index of the frequency component with largest magnitude
+		meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+		skewness(): skewness of the frequency domain signal 
+		kurtosis(): kurtosis of the frequency domain signal 
+		bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+		angle(): Angle between to vectors.
+
