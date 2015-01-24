@@ -26,7 +26,7 @@ Function Details:
 The steps used by run_analysis.R
 	
 -----------------------------------------------------------------
-- FEATURES DATA
+FEATURES DATA
 -----------------------------------------------------------------
 	
 Make fwf template (column widths)
@@ -56,7 +56,7 @@ Cleanup (features)
 	Deletes objects that are no longer needed.
 
 -----------------------------------------------------------------
-- TRAINING DATA
+TRAINING DATA
 -----------------------------------------------------------------
 
 Reads training data
@@ -91,7 +91,7 @@ Cleanup
 	Deletes objects that are no longer needed.
 
 -----------------------------------------------------------------
-- TEST DATA
+TEST DATA
 -----------------------------------------------------------------
 
 Reads test data
