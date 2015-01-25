@@ -1,0 +1,68 @@
+Body Accel Time Mean X
+Body Accel Time Mean Y
+Body Accel Time Mean Z
+Body Accel Time Standard Dev X
+Body Accel Time Standard Dev Y
+Body Accel Time Standard Dev Z
+Gravity Accel Time Mean X
+Gravity Accel Time Mean Y
+Gravity Accel Time Mean Z
+Gravity Accel Time Standard Dev X
+Gravity Accel Time Standard Dev Y
+Gravity Accel Time Standard Dev Z
+Body Accel Jerk Time Mean X
+Body Accel Jerk Time Mean Y
+Body Accel Jerk Time Mean Z
+Body Accel Jerk Time Standard Dev X
+Body Accel Jerk Time Standard Dev Y
+Body Accel Jerk Time Standard Dev Z
+Body Gyro Time Mean X
+Body Gyro Time Mean Y
+Body Gyro Time Mean Z
+Body Gyro Time Standard Dev X
+Body Gyro Time Standard Dev Y
+Body Gyro Time Standard Dev Z
+Body Gyro Jerk Time Mean X
+Body Gyro Jerk Time Mean Y
+Body Gyro Jerk Time Mean Z
+Body Gyro Jerk Time Standard Dev X
+Body Gyro Jerk Time Standard Dev Y
+Body Gyro Jerk Time Standard Dev Z
+Body Accel Magnitude Time Mean
+Body Accel Magnitude Time Standard Dev
+Gravity Accel Magnitude Time Mean
+Gravity Accel Magnitude Time Standard Dev
+Gravity Accel Jerk Magnitude Time Mean
+Gravity Accel Jerk Magnitude Time Standard Dev
+Body Gyro Magnitude Time Mean
+Body Gyro Magnitude Time Standard Dev
+Body Gyro Jerk Magnitude Time Mean
+Body Gyro Jerk Magnitude Time Standard Dev
+Body Accel Freq Mean X
+Body Accel Freq Mean Y
+Body Accel Freq Mean Z
+Body Accel Freq Standard Dev X
+Body Accel Freq Standard Dev Y
+Body Accel Freq Standard Dev Z
+Body Accel Jerk Freq Mean X
+Body Accel Jerk Freq Mean Y
+Body Accel Jerk Freq Mean Z
+Body Accel Jerk Freq Standard Dev X
+Body Accel Jerk Freq Standard Dev Y
+Body Accel Jerk Freq Standard Dev Z
+Body Gyro Freq Mean X
+Body Gyro Freq Mean Y
+Body Gyro Freq Mean Z
+Body Gyro Freq Standard Dev X
+Body Gyro Freq Standard Dev Y
+Body Gyro Freq Standard Dev Z
+Body Accel Magnitude Freq Mean
+Body Accel Magnitude Freq Standard Dev
+Body Body Accel Jerk Magnitude Freq Mean
+Body Body Accel Jerk Magnitude Freq Standard Dev
+Body Body Gyro Magnitude Freq Mean
+Body Body Gyro Magnitude Freq Standard Dev
+Body Body Gyro Jerk Magnitude Freq Mean
+Body Body Gyro Jerk Magnitude Freq Standard Dev
+Subject
+Activity
