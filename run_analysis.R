@@ -139,8 +139,8 @@ tidy2 <-
     summarise_each(funs(mean))
 
 # create output files
-write.table(tidy1, file = "tidy1.txt", sep = " ", row.names = FALSE, col.names = TRUE)
-write.table(tidy2, file = "tidy2.txt", sep = " ", row.names = FALSE, col.names = TRUE)
+write.table(tidy1, file = "tidy_data1.txt", sep = " ", row.names = FALSE, col.names = TRUE)
+write.table(tidy2, file = "tidy_data2.txt", sep = " ", row.names = FALSE, col.names = TRUE)
 
 }
 

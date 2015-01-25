@@ -12,7 +12,7 @@ Instructions:
 	4. Run function run_analysis().
 
 
-Function Details:
+Function Overview:
 
 	1 Merges the training and the test sets to create one data set.
 	2 Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -23,11 +23,16 @@ Function Details:
 
 
 
-The steps used by run_analysis.R
-	
------------------------------------------------------------------
-FEATURES DATA
------------------------------------------------------------------
+
+
+
+Detail steps used by run_analysis.R
+
+
+
+
+FEATURES DATA:
+
 	
 Make fwf template (column widths)
 	Creates a vector "cols" that defines the column positions for the fixed 
@@ -55,9 +60,12 @@ Read "subfeatures.txt"
 Cleanup (features)
 	Deletes objects that are no longer needed.
 
------------------------------------------------------------------
-TRAINING DATA
------------------------------------------------------------------
+
+
+
+
+TRAINING DATA:
+
 
 Reads training data
 	Reads the training data in "/train/X_train.txt" to create data frame "df1"
@@ -90,9 +98,13 @@ Add the activity vector to the training data frame (new column)
 Cleanup 
 	Deletes objects that are no longer needed.
 
------------------------------------------------------------------
-TEST DATA
------------------------------------------------------------------
+
+
+
+
+
+TEST DATA:
+
 
 Reads test data
 	Reads the test data in "/test/X_test.txt" to create data frame "df2"
@@ -125,9 +137,11 @@ Add the activity vector to the test data frame (new column)
 Cleanup 
 	Deletes objects that are no longer needed.
 
------------------------------------------------------------------
-- ANALYSIS
------------------------------------------------------------------
+
+
+
+FINAL ANALYSIS:
+
 
 Combines training and test data
 	Combines training and test data frames to create tidy data frame "tidy1".
@@ -141,5 +155,3 @@ Group_by and Summarize
 	
 Create output files
 	Writes data from tidy1 and tidy2 to text files.
-
------------------------------------------------------------------
