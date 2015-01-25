@@ -65,7 +65,7 @@ activity1$V1[activity1$V1 == 6] <- "LAYING"
 
 
 # set dataframe column names from features
-#colnames(df1) <- features$V2
+colnames(df1) <- features$V2
 
 # subset the training data frame (just indexes we want, mean and std)
 df1x <- df1[,indexes]
@@ -106,7 +106,7 @@ activity2$V1[activity2$V1 == 6] <- "LAYING"
 
 
 # set dataframe column names from features
-#colnames(df2) <- features$V2
+colnames(df2) <- features$V2
 
 # subset the test data frame (just indexes we want, mean and std)
 df2x <- df2[,indexes]
